@@ -10,3 +10,5 @@
 2026-10-29 23:00:58 Candela ETH vela 2026-10-29T22:00Z: ordem expirou sem executar
 2026-10-30 02:03:00 Candela ETH vela 2026-10-30T01:00Z: ordem limitada de VENDA a 2210.63
 2026-10-30 03:02:00 Candela ETH vela 2026-10-30T02:00Z: executou venda a 2210.63
+2026-10-30 14:43:51 experimentos: erro ModuleNotFoundError("No module named 'tendencia15'") (os outros robôs seguem normais)
+2026-10-30 14:43:51 repórter: erro ModuleNotFoundError("No module named 'tendencia15'") (os outros robôs seguem normais)
