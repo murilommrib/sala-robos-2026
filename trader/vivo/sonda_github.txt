@@ -1,0 +1,15 @@
+binance_vision_book      OK
+binance_vision_24h       OK
+binance_vision_depth     OK
+binance_vision_klines    OK
+binance_api_book         FALHOU <HTTPError 451: ''>
+binance_fut_funding      FALHOU <HTTPError 451: ''>
+binance_fut_oi           FALHOU <HTTPError 451: ''>
+kraken_fut_tickers       OK
+kraken_fut_instruments   OK
+kraken_spot_ticker       OK
+fear_greed               OK
+coingecko_global         OK
+Resultado salvo em trader/vivo/sonda.json. Nenhuma ordem enviada.
+yahoo_spy 200
+binance_fapi_funding_hist 451
