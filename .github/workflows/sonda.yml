@@ -1,0 +1,16 @@
+name: Sonda (testa as fontes de dados)
+on:
+  workflow_dispatch:
+  push:
+    paths: [".github/workflows/sonda.yml"]
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fontes de cripto
+        run: python3 sondar.py || true
+      - name: Yahoo Finance (ETFs)
+        run: |
+          curl -s -o /dev/null -w "yahoo SPY: %{http_code}\n" -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/SPY?range=5d&interval=1d"

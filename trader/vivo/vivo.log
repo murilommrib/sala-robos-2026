@@ -1,0 +1,12 @@
+2026-10-28 15:04:21 Candela ETH vela 2026-10-28T14:00Z: ordem limitada de VENDA a 2340.45
+2026-10-28 16:18:32 Candela ETH vela 2026-10-28T15:00Z: executou venda a 2340.45
+2026-10-28 18:45:02 estado ao vivo antigo arquivado em estado_vivo_v7_arquivo_2026-10-28.json
+2026-10-28 20:03:23 Candela ETH vela 2026-10-28T19:00Z: saiu por stop a 2368.95
+2026-10-29 12:58:53 mesa: erro ModuleNotFoundError("No module named 'confluencia'") (os outros robôs seguem normais)
+2026-10-29 13:05:07 mesa: erro ModuleNotFoundError("No module named 'confluencia'") (os outros robôs seguem normais)
+2026-10-29 13:10:12 mesa: erro ModuleNotFoundError("No module named 'confluencia'") (os outros robôs seguem normais)
+2026-10-29 13:15:16 mesa: erro ModuleNotFoundError("No module named 'confluencia'") (os outros robôs seguem normais)
+2026-10-29 19:02:08 Candela ETH vela 2026-10-29T18:00Z: ordem limitada de VENDA a 2340.67
+2026-10-29 23:00:58 Candela ETH vela 2026-10-29T22:00Z: ordem expirou sem executar
+2026-10-30 02:03:00 Candela ETH vela 2026-10-30T01:00Z: ordem limitada de VENDA a 2210.63
+2026-10-30 03:02:00 Candela ETH vela 2026-10-30T02:00Z: executou venda a 2210.63

@@ -1,0 +1,4 @@
+__pycache__/
+*.tmp
+trader/sala/.trava
+trader/**/*_arquivo_*.json
