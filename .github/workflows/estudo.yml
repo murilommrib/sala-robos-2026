@@ -1,0 +1,24 @@
+name: Estudo (testes históricos, não mexe nos robôs)
+on:
+  workflow_dispatch:
+  push:
+    paths: ["estudos/*.py"]
+permissions:
+  contents: write
+concurrency:
+  group: estudo
+  cancel-in-progress: false
+jobs:
+  estudo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rodar o estudo da abertura de NY + FVG
+        run: python3 estudos/orb_fvg.py
+      - name: Guardar o resultado
+        run: |
+          git config user.name "sala-robos"; git config user.email "sala-robos@users.noreply.github.com"
+          git add estudos/resultado_orb_fvg.json
+          git commit -q -m "estudo: abertura de NY + FVG" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done
