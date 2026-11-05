@@ -256,6 +256,12 @@ def resumo_vivo(st, merc, est_sala):
     except Exception:
         pass
     try:
+        import abertura_ny as ANY
+        if "aberturany" in out["robos"]:
+            out["robos"]["aberturany"].update(ANY.resumo(st))
+    except Exception:
+        pass
+    try:
         import risco as RISCO, experimentos as EXR
         out["risco"] = RISCO.medir(st, merc, est_sala, EXR.velas(agora), SALA.ROBOS)
     except Exception as e:
@@ -331,6 +337,14 @@ def rodar():
             DV.rodar(st, agora_s())
         except Exception as e:
             log("diversificado: erro %r (os outros robôs seguem normais)" % (e,))
+        try:
+            import abertura_ny as ANY
+            n_ant = len(((st["robos"].get("aberturany") or {}).get("oficial") or {}).get("trades", []))
+            ANY.rodar(st, agora_s())
+            for x in st["robos"]["aberturany"]["oficial"]["trades"][n_ant:]:
+                log("Abertura NY %s: saiu por %s (%+.2f%%)" % (x[7], x[5], 100 * x[6]))
+        except Exception as e:
+            log("abertura NY: erro %r (os outros robôs seguem normais)" % (e,))
         try:
             import mesa as MESA
             n0 = len((st.get("mesa") or {}).get("setups", []))
