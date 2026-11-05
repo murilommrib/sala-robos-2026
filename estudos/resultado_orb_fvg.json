@@ -1,0 +1,1212 @@
+{
+ "gerado": "2026-11-05T08:56:32.855733Z",
+ "obs": "total_pct_risco_1x = posição de 100% do capital por operação (sem alavancagem)",
+ "SPY": {
+  "dias": 60,
+  "inicio": "2026-08-12",
+  "fim": "2026-11-04",
+  "custo_por_lado_pct": 0.02,
+  "configs": {
+   "entrada=fech stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.243,
+    "total_pct_risco_1x": -0.0,
+    "por_ano_pct": {
+     "2026": -0.0
+    }
+   },
+   "entrada=fech stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 30.0,
+    "R_medio": -0.672,
+    "total_pct_risco_1x": -0.9,
+    "por_ano_pct": {
+     "2026": -0.9
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.127,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 35.0,
+    "R_medio": -0.541,
+    "total_pct_risco_1x": -0.7,
+    "por_ano_pct": {
+     "2026": -0.7
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.311,
+    "total_pct_risco_1x": -0.2,
+    "por_ano_pct": {
+     "2026": -0.2
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 35.0,
+    "R_medio": -0.54,
+    "total_pct_risco_1x": -0.7,
+    "por_ano_pct": {
+     "2026": -0.7
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.325,
+    "total_pct_risco_1x": -0.1,
+    "por_ano_pct": {
+     "2026": -0.1
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 35.0,
+    "R_medio": -0.625,
+    "total_pct_risco_1x": -0.8,
+    "por_ano_pct": {
+     "2026": -0.8
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.239,
+    "total_pct_risco_1x": -0.1,
+    "por_ano_pct": {
+     "2026": -0.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 30.0,
+    "R_medio": -0.679,
+    "total_pct_risco_1x": -0.9,
+    "por_ano_pct": {
+     "2026": -0.9
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.128,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 35.0,
+    "R_medio": -0.546,
+    "total_pct_risco_1x": -0.7,
+    "por_ano_pct": {
+     "2026": -0.7
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.312,
+    "total_pct_risco_1x": -0.2,
+    "por_ano_pct": {
+     "2026": -0.2
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 35.0,
+    "R_medio": -0.542,
+    "total_pct_risco_1x": -0.8,
+    "por_ano_pct": {
+     "2026": -0.8
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=12h": {
+    "operacoes": 12,
+    "acerto_pct": 33.3,
+    "R_medio": -0.326,
+    "total_pct_risco_1x": -0.2,
+    "por_ano_pct": {
+     "2026": -0.2
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=16h": {
+    "operacoes": 20,
+    "acerto_pct": 35.0,
+    "R_medio": -0.625,
+    "total_pct_risco_1x": -0.8,
+    "por_ano_pct": {
+     "2026": -0.8
+    }
+   }
+  }
+ },
+ "QQQ": {
+  "dias": 60,
+  "inicio": "2026-08-12",
+  "fim": "2026-11-04",
+  "custo_por_lado_pct": 0.02,
+  "configs": {
+   "entrada=fech stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 66.7,
+    "R_medio": 0.482,
+    "total_pct_risco_1x": 0.0,
+    "por_ano_pct": {
+     "2026": 0.0
+    }
+   },
+   "entrada=fech stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 40.0,
+    "R_medio": 0.278,
+    "total_pct_risco_1x": 0.4,
+    "por_ano_pct": {
+     "2026": 0.4
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 66.7,
+    "R_medio": 0.397,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 40.0,
+    "R_medio": -0.022,
+    "total_pct_risco_1x": -0.1,
+    "por_ano_pct": {
+     "2026": -0.1
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 50.0,
+    "R_medio": -0.003,
+    "total_pct_risco_1x": 0.0,
+    "por_ano_pct": {
+     "2026": 0.0
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 30.0,
+    "R_medio": -0.051,
+    "total_pct_risco_1x": 0.2,
+    "por_ano_pct": {
+     "2026": 0.2
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 66.7,
+    "R_medio": 0.41,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 40.0,
+    "R_medio": 0.09,
+    "total_pct_risco_1x": 0.0,
+    "por_ano_pct": {
+     "2026": 0.0
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 66.7,
+    "R_medio": 0.483,
+    "total_pct_risco_1x": 0.0,
+    "por_ano_pct": {
+     "2026": 0.0
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 40.0,
+    "R_medio": 0.275,
+    "total_pct_risco_1x": 0.3,
+    "por_ano_pct": {
+     "2026": 0.3
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 66.7,
+    "R_medio": 0.399,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 40.0,
+    "R_medio": -0.015,
+    "total_pct_risco_1x": -0.1,
+    "por_ano_pct": {
+     "2026": -0.1
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 50.0,
+    "R_medio": -0.018,
+    "total_pct_risco_1x": -0.0,
+    "por_ano_pct": {
+     "2026": -0.0
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 30.0,
+    "R_medio": -0.054,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=12h": {
+    "operacoes": 6,
+    "acerto_pct": 66.7,
+    "R_medio": 0.406,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=16h": {
+    "operacoes": 10,
+    "acerto_pct": 40.0,
+    "R_medio": 0.093,
+    "total_pct_risco_1x": 0.0,
+    "por_ano_pct": {
+     "2026": 0.0
+    }
+   }
+  }
+ },
+ "ES=F": {
+  "dias": 59,
+  "inicio": "2026-08-27",
+  "fim": "2026-11-05",
+  "custo_por_lado_pct": 0.02,
+  "configs": {
+   "entrada=fech stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.256,
+    "total_pct_risco_1x": 0.3,
+    "por_ano_pct": {
+     "2026": 0.3
+    }
+   },
+   "entrada=fech stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 47.1,
+    "R_medio": 0.266,
+    "total_pct_risco_1x": 0.2,
+    "por_ano_pct": {
+     "2026": 0.2
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.35,
+    "total_pct_risco_1x": 0.5,
+    "por_ano_pct": {
+     "2026": 0.5
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 52.9,
+    "R_medio": 0.155,
+    "total_pct_risco_1x": 0.2,
+    "por_ano_pct": {
+     "2026": 0.2
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.342,
+    "total_pct_risco_1x": 0.5,
+    "por_ano_pct": {
+     "2026": 0.5
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 47.1,
+    "R_medio": 0.141,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.176,
+    "total_pct_risco_1x": 0.3,
+    "por_ano_pct": {
+     "2026": 0.3
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 52.9,
+    "R_medio": 0.113,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.273,
+    "total_pct_risco_1x": 0.3,
+    "por_ano_pct": {
+     "2026": 0.3
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 47.1,
+    "R_medio": 0.25,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.362,
+    "total_pct_risco_1x": 0.5,
+    "por_ano_pct": {
+     "2026": 0.5
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 52.9,
+    "R_medio": 0.136,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.353,
+    "total_pct_risco_1x": 0.5,
+    "por_ano_pct": {
+     "2026": 0.5
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 47.1,
+    "R_medio": 0.136,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=12h": {
+    "operacoes": 13,
+    "acerto_pct": 46.2,
+    "R_medio": 0.18,
+    "total_pct_risco_1x": 0.3,
+    "por_ano_pct": {
+     "2026": 0.3
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=16h": {
+    "operacoes": 17,
+    "acerto_pct": 52.9,
+    "R_medio": 0.104,
+    "total_pct_risco_1x": 0.1,
+    "por_ano_pct": {
+     "2026": 0.1
+    }
+   }
+  }
+ },
+ "NQ=F": {
+  "dias": 59,
+  "inicio": "2026-08-27",
+  "fim": "2026-11-05",
+  "custo_por_lado_pct": 0.02,
+  "configs": {
+   "entrada=fech stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 77.8,
+    "R_medio": 0.328,
+    "total_pct_risco_1x": 0.5,
+    "por_ano_pct": {
+     "2026": 0.5
+    }
+   },
+   "entrada=fech stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 36.4,
+    "R_medio": 0.015,
+    "total_pct_risco_1x": -0.1,
+    "por_ano_pct": {
+     "2026": -0.1
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 77.8,
+    "R_medio": 0.741,
+    "total_pct_risco_1x": 1.3,
+    "por_ano_pct": {
+     "2026": 1.3
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 54.5,
+    "R_medio": 0.387,
+    "total_pct_risco_1x": 0.8,
+    "por_ano_pct": {
+     "2026": 0.8
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 55.6,
+    "R_medio": 0.558,
+    "total_pct_risco_1x": 0.8,
+    "por_ano_pct": {
+     "2026": 0.8
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 54.5,
+    "R_medio": 0.833,
+    "total_pct_risco_1x": 1.6,
+    "por_ano_pct": {
+     "2026": 1.6
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 55.6,
+    "R_medio": 0.36,
+    "total_pct_risco_1x": 0.5,
+    "por_ano_pct": {
+     "2026": 0.5
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 54.5,
+    "R_medio": 0.414,
+    "total_pct_risco_1x": 0.8,
+    "por_ano_pct": {
+     "2026": 0.8
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 77.8,
+    "R_medio": 0.521,
+    "total_pct_risco_1x": 0.8,
+    "por_ano_pct": {
+     "2026": 0.8
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 45.5,
+    "R_medio": 0.379,
+    "total_pct_risco_1x": 0.6,
+    "por_ano_pct": {
+     "2026": 0.6
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 77.8,
+    "R_medio": 0.742,
+    "total_pct_risco_1x": 1.2,
+    "por_ano_pct": {
+     "2026": 1.2
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 54.5,
+    "R_medio": 0.388,
+    "total_pct_risco_1x": 0.8,
+    "por_ano_pct": {
+     "2026": 0.8
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 55.6,
+    "R_medio": 0.738,
+    "total_pct_risco_1x": 1.0,
+    "por_ano_pct": {
+     "2026": 1.0
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 54.5,
+    "R_medio": 0.829,
+    "total_pct_risco_1x": 1.6,
+    "por_ano_pct": {
+     "2026": 1.6
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=12h": {
+    "operacoes": 9,
+    "acerto_pct": 55.6,
+    "R_medio": 0.359,
+    "total_pct_risco_1x": 0.5,
+    "por_ano_pct": {
+     "2026": 0.5
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=16h": {
+    "operacoes": 11,
+    "acerto_pct": 54.5,
+    "R_medio": 0.413,
+    "total_pct_risco_1x": 0.8,
+    "por_ano_pct": {
+     "2026": 0.8
+    }
+   }
+  }
+ },
+ "BTCUSDT": {
+  "dias": 1406,
+  "inicio": "2022-12-31",
+  "fim": "2026-11-05",
+  "custo_por_lado_pct": 0.1,
+  "configs": {
+   "entrada=fech stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 220,
+    "acerto_pct": 28.6,
+    "R_medio": -0.666,
+    "total_pct_risco_1x": -31.3,
+    "por_ano_pct": {
+     "2023": -13.0,
+     "2024": -0.8,
+     "2025": -8.2,
+     "2026": -13.3
+    }
+   },
+   "entrada=fech stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 296,
+    "acerto_pct": 27.7,
+    "R_medio": -0.809,
+    "total_pct_risco_1x": -43.0,
+    "por_ano_pct": {
+     "2023": -17.0,
+     "2024": -2.2,
+     "2025": -12.1,
+     "2026": -20.1
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 220,
+    "acerto_pct": 30.0,
+    "R_medio": -0.677,
+    "total_pct_risco_1x": -33.5,
+    "por_ano_pct": {
+     "2023": -12.9,
+     "2024": -2.3,
+     "2025": -9.5,
+     "2026": -13.6
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 296,
+    "acerto_pct": 29.4,
+    "R_medio": -0.874,
+    "total_pct_risco_1x": -46.7,
+    "por_ano_pct": {
+     "2023": -17.6,
+     "2024": -6.4,
+     "2025": -14.0,
+     "2026": -19.7
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=12h": {
+    "operacoes": 220,
+    "acerto_pct": 25.0,
+    "R_medio": -0.858,
+    "total_pct_risco_1x": -33.2,
+    "por_ano_pct": {
+     "2023": -13.3,
+     "2024": -2.5,
+     "2025": -9.7,
+     "2026": -12.5
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=16h": {
+    "operacoes": 296,
+    "acerto_pct": 25.3,
+    "R_medio": -1.035,
+    "total_pct_risco_1x": -45.7,
+    "por_ano_pct": {
+     "2023": -19.7,
+     "2024": -5.9,
+     "2025": -14.6,
+     "2026": -16.0
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=12h": {
+    "operacoes": 220,
+    "acerto_pct": 28.2,
+    "R_medio": -0.849,
+    "total_pct_risco_1x": -33.7,
+    "por_ano_pct": {
+     "2023": -13.6,
+     "2024": -2.0,
+     "2025": -9.3,
+     "2026": -13.6
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=16h": {
+    "operacoes": 296,
+    "acerto_pct": 29.1,
+    "R_medio": -1.053,
+    "total_pct_risco_1x": -46.7,
+    "por_ano_pct": {
+     "2023": -20.2,
+     "2024": -7.7,
+     "2025": -13.9,
+     "2026": -16.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 216,
+    "acerto_pct": 29.2,
+    "R_medio": -0.669,
+    "total_pct_risco_1x": -30.7,
+    "por_ano_pct": {
+     "2023": -12.9,
+     "2024": -0.8,
+     "2025": -8.2,
+     "2026": -12.8
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 295,
+    "acerto_pct": 27.8,
+    "R_medio": -0.806,
+    "total_pct_risco_1x": -42.9,
+    "por_ano_pct": {
+     "2023": -17.0,
+     "2024": -2.2,
+     "2025": -12.1,
+     "2026": -20.0
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 216,
+    "acerto_pct": 30.6,
+    "R_medio": -0.681,
+    "total_pct_risco_1x": -33.0,
+    "por_ano_pct": {
+     "2023": -12.8,
+     "2024": -2.4,
+     "2025": -9.5,
+     "2026": -13.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 295,
+    "acerto_pct": 29.5,
+    "R_medio": -0.871,
+    "total_pct_risco_1x": -46.6,
+    "por_ano_pct": {
+     "2023": -17.6,
+     "2024": -6.4,
+     "2025": -14.0,
+     "2026": -19.5
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=12h": {
+    "operacoes": 216,
+    "acerto_pct": 25.5,
+    "R_medio": -0.862,
+    "total_pct_risco_1x": -32.7,
+    "por_ano_pct": {
+     "2023": -13.2,
+     "2024": -2.5,
+     "2025": -9.7,
+     "2026": -11.9
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=16h": {
+    "operacoes": 295,
+    "acerto_pct": 25.4,
+    "R_medio": -1.027,
+    "total_pct_risco_1x": -45.6,
+    "por_ano_pct": {
+     "2023": -19.7,
+     "2024": -5.9,
+     "2025": -14.6,
+     "2026": -15.8
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=12h": {
+    "operacoes": 216,
+    "acerto_pct": 28.7,
+    "R_medio": -0.852,
+    "total_pct_risco_1x": -33.1,
+    "por_ano_pct": {
+     "2023": -13.5,
+     "2024": -2.0,
+     "2025": -9.3,
+     "2026": -13.0
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=16h": {
+    "operacoes": 295,
+    "acerto_pct": 29.2,
+    "R_medio": -1.045,
+    "total_pct_risco_1x": -46.6,
+    "por_ano_pct": {
+     "2023": -20.2,
+     "2024": -7.7,
+     "2025": -13.9,
+     "2026": -15.9
+    }
+   }
+  }
+ },
+ "ETHUSDT": {
+  "dias": 1406,
+  "inicio": "2022-12-31",
+  "fim": "2026-11-05",
+  "custo_por_lado_pct": 0.1,
+  "configs": {
+   "entrada=fech stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 217,
+    "acerto_pct": 32.7,
+    "R_medio": -0.393,
+    "total_pct_risco_1x": -25.8,
+    "por_ano_pct": {
+     "2023": -5.9,
+     "2024": -6.0,
+     "2025": -9.1,
+     "2026": -7.6
+    }
+   },
+   "entrada=fech stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 32.1,
+    "R_medio": -0.419,
+    "total_pct_risco_1x": -31.2,
+    "por_ano_pct": {
+     "2023": -8.4,
+     "2024": -9.4,
+     "2025": -7.4,
+     "2026": -10.5
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 217,
+    "acerto_pct": 36.4,
+    "R_medio": -0.417,
+    "total_pct_risco_1x": -25.1,
+    "por_ano_pct": {
+     "2023": -4.9,
+     "2024": -6.2,
+     "2025": -9.5,
+     "2026": -7.3
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 37.2,
+    "R_medio": -0.455,
+    "total_pct_risco_1x": -33.5,
+    "por_ano_pct": {
+     "2023": -9.0,
+     "2024": -11.8,
+     "2025": -9.3,
+     "2026": -8.8
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=12h": {
+    "operacoes": 217,
+    "acerto_pct": 33.2,
+    "R_medio": -0.462,
+    "total_pct_risco_1x": -24.8,
+    "por_ano_pct": {
+     "2023": -5.0,
+     "2024": -6.8,
+     "2025": -9.1,
+     "2026": -6.5
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 31.1,
+    "R_medio": -0.564,
+    "total_pct_risco_1x": -34.9,
+    "por_ano_pct": {
+     "2023": -11.4,
+     "2024": -13.6,
+     "2025": -11.8,
+     "2026": -3.7
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=12h": {
+    "operacoes": 217,
+    "acerto_pct": 37.8,
+    "R_medio": -0.502,
+    "total_pct_risco_1x": -25.7,
+    "por_ano_pct": {
+     "2023": -3.1,
+     "2024": -8.0,
+     "2025": -9.5,
+     "2026": -7.9
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 36.9,
+    "R_medio": -0.615,
+    "total_pct_risco_1x": -36.3,
+    "por_ano_pct": {
+     "2023": -10.8,
+     "2024": -12.3,
+     "2025": -11.7,
+     "2026": -7.8
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 212,
+    "acerto_pct": 33.5,
+    "R_medio": -0.372,
+    "total_pct_risco_1x": -25.0,
+    "por_ano_pct": {
+     "2023": -5.7,
+     "2024": -5.5,
+     "2025": -9.1,
+     "2026": -7.4
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 32.1,
+    "R_medio": -0.419,
+    "total_pct_risco_1x": -31.2,
+    "por_ano_pct": {
+     "2023": -8.4,
+     "2024": -9.4,
+     "2025": -7.4,
+     "2026": -10.5
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 212,
+    "acerto_pct": 37.3,
+    "R_medio": -0.396,
+    "total_pct_risco_1x": -24.4,
+    "por_ano_pct": {
+     "2023": -4.7,
+     "2024": -5.6,
+     "2025": -9.5,
+     "2026": -7.1
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 37.2,
+    "R_medio": -0.455,
+    "total_pct_risco_1x": -33.5,
+    "por_ano_pct": {
+     "2023": -9.0,
+     "2024": -11.8,
+     "2025": -9.3,
+     "2026": -8.8
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=12h": {
+    "operacoes": 212,
+    "acerto_pct": 34.0,
+    "R_medio": -0.438,
+    "total_pct_risco_1x": -24.0,
+    "por_ano_pct": {
+     "2023": -4.9,
+     "2024": -6.2,
+     "2025": -9.1,
+     "2026": -6.3
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 31.1,
+    "R_medio": -0.564,
+    "total_pct_risco_1x": -34.9,
+    "por_ano_pct": {
+     "2023": -11.4,
+     "2024": -13.6,
+     "2025": -11.8,
+     "2026": -3.7
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=12h": {
+    "operacoes": 212,
+    "acerto_pct": 38.7,
+    "R_medio": -0.479,
+    "total_pct_risco_1x": -24.9,
+    "por_ano_pct": {
+     "2023": -2.9,
+     "2024": -7.5,
+     "2025": -9.5,
+     "2026": -7.7
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=16h": {
+    "operacoes": 293,
+    "acerto_pct": 36.9,
+    "R_medio": -0.615,
+    "total_pct_risco_1x": -36.3,
+    "por_ano_pct": {
+     "2023": -10.8,
+     "2024": -12.3,
+     "2025": -11.7,
+     "2026": -7.8
+    }
+   }
+  }
+ },
+ "SOLUSDT": {
+  "dias": 1406,
+  "inicio": "2022-12-31",
+  "fim": "2026-11-05",
+  "custo_por_lado_pct": 0.1,
+  "configs": {
+   "entrada=fech stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 198,
+    "acerto_pct": 32.8,
+    "R_medio": -0.33,
+    "total_pct_risco_1x": -35.3,
+    "por_ano_pct": {
+     "2023": -14.7,
+     "2024": -11.7,
+     "2025": -13.5,
+     "2026": -0.8
+    }
+   },
+   "entrada=fech stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 26.4,
+    "R_medio": -0.491,
+    "total_pct_risco_1x": -53.7,
+    "por_ano_pct": {
+     "2023": -24.8,
+     "2024": -18.1,
+     "2025": -14.8,
+     "2026": -11.8
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 198,
+    "acerto_pct": 35.4,
+    "R_medio": -0.311,
+    "total_pct_risco_1x": -32.9,
+    "por_ano_pct": {
+     "2023": -13.9,
+     "2024": -11.8,
+     "2025": -13.8,
+     "2026": 2.4
+    }
+   },
+   "entrada=fech stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 34.0,
+    "R_medio": -0.437,
+    "total_pct_risco_1x": -46.8,
+    "por_ano_pct": {
+     "2023": -24.1,
+     "2024": -12.1,
+     "2025": -14.5,
+     "2026": -6.7
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=12h": {
+    "operacoes": 198,
+    "acerto_pct": 31.8,
+    "R_medio": -0.378,
+    "total_pct_risco_1x": -29.8,
+    "por_ano_pct": {
+     "2023": -10.8,
+     "2024": -7.6,
+     "2025": -14.5,
+     "2026": -0.3
+    }
+   },
+   "entrada=fech stop=env alvo=3:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 26.4,
+    "R_medio": -0.491,
+    "total_pct_risco_1x": -48.4,
+    "por_ano_pct": {
+     "2023": -18.6,
+     "2024": -19.2,
+     "2025": -12.0,
+     "2026": -10.9
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=12h": {
+    "operacoes": 198,
+    "acerto_pct": 36.9,
+    "R_medio": -0.357,
+    "total_pct_risco_1x": -26.2,
+    "por_ano_pct": {
+     "2023": -11.7,
+     "2024": -4.5,
+     "2025": -11.5,
+     "2026": -1.1
+    }
+   },
+   "entrada=fech stop=env alvo=2:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 34.0,
+    "R_medio": -0.475,
+    "total_pct_risco_1x": -43.6,
+    "por_ano_pct": {
+     "2023": -17.0,
+     "2024": -12.6,
+     "2025": -14.9,
+     "2026": -8.7
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=12h": {
+    "operacoes": 195,
+    "acerto_pct": 33.8,
+    "R_medio": -0.312,
+    "total_pct_risco_1x": -34.5,
+    "por_ano_pct": {
+     "2023": -13.7,
+     "2024": -11.7,
+     "2025": -13.4,
+     "2026": -0.8
+    }
+   },
+   "entrada=prox stop=fvg alvo=3:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 27.4,
+    "R_medio": -0.496,
+    "total_pct_risco_1x": -51.9,
+    "por_ano_pct": {
+     "2023": -24.1,
+     "2024": -18.0,
+     "2025": -12.4,
+     "2026": -11.8
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=12h": {
+    "operacoes": 195,
+    "acerto_pct": 36.4,
+    "R_medio": -0.298,
+    "total_pct_risco_1x": -31.4,
+    "por_ano_pct": {
+     "2023": -12.1,
+     "2024": -11.8,
+     "2025": -13.6,
+     "2026": 2.5
+    }
+   },
+   "entrada=prox stop=fvg alvo=2:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 34.7,
+    "R_medio": -0.461,
+    "total_pct_risco_1x": -46.1,
+    "por_ano_pct": {
+     "2023": -23.1,
+     "2024": -12.1,
+     "2025": -14.5,
+     "2026": -6.7
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=12h": {
+    "operacoes": 195,
+    "acerto_pct": 32.3,
+    "R_medio": -0.374,
+    "total_pct_risco_1x": -28.9,
+    "por_ano_pct": {
+     "2023": -9.7,
+     "2024": -7.8,
+     "2025": -14.3,
+     "2026": -0.4
+    }
+   },
+   "entrada=prox stop=env alvo=3:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 27.1,
+    "R_medio": -0.482,
+    "total_pct_risco_1x": -47.8,
+    "por_ano_pct": {
+     "2023": -17.5,
+     "2024": -19.2,
+     "2025": -12.0,
+     "2026": -11.0
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=12h": {
+    "operacoes": 195,
+    "acerto_pct": 37.9,
+    "R_medio": -0.337,
+    "total_pct_risco_1x": -26.6,
+    "por_ano_pct": {
+     "2023": -10.0,
+     "2024": -7.0,
+     "2025": -11.3,
+     "2026": -1.0
+    }
+   },
+   "entrada=prox stop=env alvo=2:1 ate=16h": {
+    "operacoes": 288,
+    "acerto_pct": 35.1,
+    "R_medio": -0.459,
+    "total_pct_risco_1x": -43.0,
+    "por_ano_pct": {
+     "2023": -16.2,
+     "2024": -12.6,
+     "2025": -14.9,
+     "2026": -8.6
+    }
+   }
+  }
+ }
+}
