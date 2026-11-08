@@ -1,0 +1,3 @@
+Copiado de https://github.com/tradermonty/claude-trading-skills (licença MIT, ver LICENSE):
+skills/residual-edge-analyzer/scripts/analyze_residual_edge.py
+skills/backtest-expert/scripts/evaluate_backtest.py

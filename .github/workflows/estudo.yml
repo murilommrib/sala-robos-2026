@@ -14,11 +14,14 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
-      - name: Rodar o estudo da abertura de NY + FVG
-        run: python3 estudos/orb_fvg.py
+        with:
+          fetch-depth: 2
+      - name: Rodar o estudo
+        run: |
+          if git diff --name-only HEAD~1 HEAD | grep -q "estudos/vantagem.py"; then python3 estudos/vantagem.py; else python3 estudos/orb_fvg.py; fi
       - name: Guardar o resultado
         run: |
           git config user.name "sala-robos"; git config user.email "sala-robos@users.noreply.github.com"
-          git add estudos/resultado_orb_fvg.json
-          git commit -q -m "estudo: abertura de NY + FVG" || exit 0
+          git add estudos/resultado_orb_fvg.json estudos/vantagem || true
+          git commit -q -m "estudo: resultado" || exit 0
           for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done
