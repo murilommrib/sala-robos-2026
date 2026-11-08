@@ -1,0 +1,324 @@
+{
+  "analysis_type": "returns_based_residual_edge",
+  "data": {
+    "annualization_factor": 365,
+    "baseline_columns": [
+      "btc_return",
+      "cesta_return"
+    ],
+    "configured_minimum_observations": 250,
+    "declarations": {
+      "analysis_scope": "in_sample",
+      "baseline_return_basis": "net",
+      "baseline_selection": "predeclared",
+      "strategy_return_basis": "net",
+      "universe_data": "not_applicable"
+    },
+    "effective_minimum_observations": 250,
+    "end_date": "2026-11-07",
+    "frequency": "daily",
+    "observation_count": 2423,
+    "regime_columns": [
+      "volatility_regime"
+    ],
+    "return_unit_normalized": "decimal",
+    "start_date": "2020-03-21",
+    "strategy_column": "strategy_return"
+  },
+  "method_notes": [
+    "OLS includes an intercept.",
+    "Residual edge ratio is annualized alpha divided by annualized residual volatility.",
+    "HAC standard errors address heteroskedasticity and serial correlation asymptotically.",
+    "Results describe declared return-series exposure, not holdings-based Brinson attribution."
+  ],
+  "models": [
+    {
+      "adjusted_r_squared": 0.0007723228,
+      "alpha": {
+        "annualized_arithmetic": 0.4555103394,
+        "hac_standard_error_periodic": 0.0005999963,
+        "periodic": 0.0012479735,
+        "t_stat": 2.0799688623
+      },
+      "baseline_columns": [
+        "cesta_return"
+      ],
+      "coefficients": [
+        {
+          "estimate": 0.0012479735,
+          "hac_standard_error": 0.0005999963,
+          "name": "intercept",
+          "t_stat": 2.0799688623
+        },
+        {
+          "estimate": 0.0282484049,
+          "hac_standard_error": 0.0855600519,
+          "name": "cesta_return",
+          "t_stat": 0.3301588095
+        }
+      ],
+      "diagnostic_status": "RESIDUAL_FRAGILE",
+      "hac_lags": 8,
+      "name": "cesta",
+      "observation_count": 2423,
+      "r_squared": 0.0011848858,
+      "residual": {
+        "active_return_max_drawdown": -0.6712656881,
+        "annualized_volatility": 0.5941499132,
+        "durbin_watson": 2.0820114029,
+        "lag_one_autocorrelation": -0.0410112179,
+        "periodic_volatility": 0.0310992278,
+        "residual_edge_ratio": 0.7666589345
+      },
+      "role": "primary",
+      "rolling": {
+        "enabled": true,
+        "failed_window_count": 0,
+        "latest": {
+          "annualized_alpha": 0.6465853491,
+          "end_index": 2422,
+          "r_squared": 0.0202290831,
+          "residual_edge_ratio": 1.675652146
+        },
+        "positive_alpha_fraction": 0.4393939394,
+        "r_squared": {
+          "max": 0.8466292779,
+          "median": 0.1561538361,
+          "min": 1.49e-08
+        },
+        "residual_edge_ratio": {
+          "max": 2.5477698616,
+          "median": -0.2068579002,
+          "min": -3.1770310284
+        },
+        "window": 180,
+        "window_count": 2244
+      },
+      "status_reasons": [
+        "Residual evidence does not clear all robustness thresholds.",
+        "Rolling alpha is positive in too few windows."
+      ],
+      "vif": {
+        "cesta_return": 1.0
+      }
+    },
+    {
+      "adjusted_r_squared": 0.0022906529,
+      "alpha": {
+        "annualized_arithmetic": 0.5085908444,
+        "hac_standard_error_periodic": 0.0006256196,
+        "periodic": 0.0013933996,
+        "t_stat": 2.2272312383
+      },
+      "baseline_columns": [
+        "btc_return"
+      ],
+      "coefficients": [
+        {
+          "estimate": 0.0013933996,
+          "hac_standard_error": 0.0006256196,
+          "name": "intercept",
+          "t_stat": 2.2272312383
+        },
+        {
+          "estimate": -0.0539215779,
+          "hac_standard_error": 0.0711540211,
+          "name": "btc_return",
+          "t_stat": -0.7578149081
+        }
+      ],
+      "diagnostic_status": "RESIDUAL_FRAGILE",
+      "hac_lags": 8,
+      "name": "btc",
+      "observation_count": 2423,
+      "r_squared": 0.002702589,
+      "residual": {
+        "active_return_max_drawdown": -0.653711251,
+        "annualized_volatility": 0.5936983352,
+        "durbin_watson": 2.0726427429,
+        "lag_one_autocorrelation": -0.036327033,
+        "periodic_volatility": 0.0310755911,
+        "residual_edge_ratio": 0.8566485946
+      },
+      "role": "sensitivity",
+      "rolling": {
+        "enabled": true,
+        "failed_window_count": 0,
+        "latest": {
+          "annualized_alpha": 0.6357995224,
+          "end_index": 2422,
+          "r_squared": 0.0099430552,
+          "residual_edge_ratio": 1.639118641
+        },
+        "positive_alpha_fraction": 0.5204991087,
+        "r_squared": {
+          "max": 0.6623184917,
+          "median": 0.1039438212,
+          "min": 7.2e-09
+        },
+        "residual_edge_ratio": {
+          "max": 4.0586400708,
+          "median": 0.0640446473,
+          "min": -2.9882125328
+        },
+        "window": 180,
+        "window_count": 2244
+      },
+      "status_reasons": [
+        "Residual evidence does not clear all robustness thresholds.",
+        "Rolling alpha is positive in too few windows."
+      ],
+      "vif": {
+        "btc_return": 1.0
+      }
+    },
+    {
+      "adjusted_r_squared": 0.0201880529,
+      "alpha": {
+        "annualized_arithmetic": 0.4531734043,
+        "hac_standard_error_periodic": 0.0005912845,
+        "periodic": 0.001241571,
+        "t_stat": 2.0997861079
+      },
+      "baseline_columns": [
+        "cesta_return",
+        "btc_return"
+      ],
+      "coefficients": [
+        {
+          "estimate": 0.001241571,
+          "hac_standard_error": 0.0005912845,
+          "name": "intercept",
+          "t_stat": 2.0997861079
+        },
+        {
+          "estimate": 0.1946545816,
+          "hac_standard_error": 0.1368540643,
+          "name": "cesta_return",
+          "t_stat": 1.4223514847
+        },
+        {
+          "estimate": -0.2560280823,
+          "hac_standard_error": 0.1157266266,
+          "name": "btc_return",
+          "t_stat": -2.2123524203
+        }
+      ],
+      "diagnostic_status": "RESIDUAL_FRAGILE",
+      "hac_lags": 8,
+      "name": "cesta_mais_btc",
+      "observation_count": 2423,
+      "r_squared": 0.0209971461,
+      "residual": {
+        "active_return_max_drawdown": -0.662926373,
+        "annualized_volatility": 0.5882276896,
+        "durbin_watson": 2.0941877216,
+        "lag_one_autocorrelation": -0.0471034259,
+        "periodic_volatility": 0.0307892445,
+        "residual_edge_ratio": 0.7704047468
+      },
+      "role": "sensitivity",
+      "rolling": {
+        "enabled": true,
+        "failed_window_count": 0,
+        "latest": {
+          "annualized_alpha": 0.6546744745,
+          "end_index": 2422,
+          "r_squared": 0.026376292,
+          "residual_edge_ratio": 1.701963011
+        },
+        "positive_alpha_fraction": 0.4113190731,
+        "r_squared": {
+          "max": 0.8468929097,
+          "median": 0.1967330347,
+          "min": 0.0007988066
+        },
+        "residual_edge_ratio": {
+          "max": 2.3139561555,
+          "median": -0.2767165369,
+          "min": -3.143514381
+        },
+        "window": 180,
+        "window_count": 2244
+      },
+      "status_reasons": [
+        "Residual evidence does not clear all robustness thresholds.",
+        "Rolling alpha is positive in too few windows."
+      ],
+      "vif": {
+        "btc_return": 3.075360279,
+        "cesta_return": 3.075360279
+      }
+    }
+  ],
+  "primary_model": "cesta",
+  "regime_analysis": {
+    "volatility_regime": [
+      {
+        "active_return_metrics": {
+          "annualized_arithmetic_return": 0.3385175181,
+          "annualized_volatility": 0.7285961011,
+          "max_drawdown": -0.7209824128,
+          "periodic_mean": 0.0009274453,
+          "periodic_volatility": 0.0381364629,
+          "sharpe_zero_rate": 0.4646161537
+        },
+        "evidence_status": "ADEQUATE",
+        "label": "alta_vol",
+        "observation_count": 986,
+        "positive_fraction": 0.514198783
+      },
+      {
+        "active_return_metrics": {
+          "annualized_arithmetic_return": 0.5357851632,
+          "annualized_volatility": 0.4808653109,
+          "max_drawdown": -0.6124941321,
+          "periodic_mean": 0.0014679046,
+          "periodic_volatility": 0.0251696407,
+          "sharpe_zero_rate": 1.1142104683
+        },
+        "evidence_status": "ADEQUATE",
+        "label": "baixa_vol",
+        "observation_count": 1437,
+        "positive_fraction": 0.5233124565
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "source": {
+    "config_name": "vaivem.json",
+    "csv_name": "vaivem.csv"
+  },
+  "strategy_metrics": {
+    "annualized_arithmetic_return": 0.4794197402,
+    "annualized_volatility": 0.5945022263,
+    "max_drawdown": -0.6650689632,
+    "periodic_mean": 0.0013134787,
+    "periodic_volatility": 0.0311176687,
+    "sharpe_zero_rate": 0.8064221108
+  },
+  "verdict": {
+    "decision_eligibility": "REVIEW_REQUIRED",
+    "decision_grade": false,
+    "reasons": [
+      "Residual evidence does not clear all robustness thresholds.",
+      "Rolling alpha is positive in too few windows."
+    ],
+    "status": "RESIDUAL_FRAGILE",
+    "thresholds": {
+      "alpha_t_stat_min": 2.0,
+      "baseline_explained_r2_min": 0.75,
+      "residual_edge_ratio_min": 0.75,
+      "rolling_positive_fraction_min": 0.6,
+      "weak_edge_ratio_max": 0.5
+    },
+    "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "warnings": [
+    {
+      "id": "NOT_OUT_OF_SAMPLE",
+      "message": "Treat in-sample residual edge as exploratory until confirmed out of sample.",
+      "severity": "high"
+    }
+  ]
+}

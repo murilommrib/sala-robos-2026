@@ -1,0 +1,57 @@
+{
+  "total_score": 59,
+  "quality_score": 59,
+  "decision": "REJECT",
+  "blocking_reasons": [
+    "excessive_drawdown"
+  ],
+  "verdict": "Abandon",
+  "dimensions": [
+    {
+      "name": "Sample Size",
+      "score": 20,
+      "max_score": 20
+    },
+    {
+      "name": "Expectancy",
+      "score": 7,
+      "max_score": 20
+    },
+    {
+      "name": "Risk Management",
+      "score": 0,
+      "max_score": 20
+    },
+    {
+      "name": "Robustness",
+      "score": 12,
+      "max_score": 20
+    },
+    {
+      "name": "Execution Realism",
+      "score": 20,
+      "max_score": 20
+    }
+  ],
+  "red_flags": [
+    {
+      "id": "excessive_drawdown",
+      "severity": "high",
+      "message": "Max drawdown 52.09% meets or exceeds the 50% hard ceiling — catastrophic risk."
+    }
+  ],
+  "profit_factor": 1.2886462373824488,
+  "profit_factor_status": "FINITE",
+  "expectancy": 0.2058319,
+  "inputs": {
+    "total_trades": 2070,
+    "win_rate": 52.9,
+    "avg_win_pct": 1.7371,
+    "avg_loss_pct": 1.514,
+    "max_drawdown_pct": 52.09,
+    "years_tested": 6,
+    "num_parameters": 2,
+    "slippage_tested": true,
+    "max_acceptable_drawdown_pct": 50
+  }
+}

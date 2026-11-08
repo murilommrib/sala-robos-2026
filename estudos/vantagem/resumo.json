@@ -1,0 +1,1292 @@
+{
+ "tendo": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 2631.0,
+  "pior_queda_pct": -56.8,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Residual evidence does not clear all robustness thresholds.",
+    "Rolling alpha is positive in too few windows."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.609,
+    "alpha_ano_pct": 17.5,
+    "t_alpha": 1.6,
+    "residual_edge_ratio": 0.59,
+    "beta": {
+     "0": {
+      "estimate": 0.0004799314,
+      "hac_standard_error": 0.0003002483,
+      "name": "intercept",
+      "t_stat": 1.5984486554
+     },
+     "1": {
+      "estimate": 0.5129658543,
+      "hac_standard_error": 0.0428062228,
+      "name": "cesta_return",
+      "t_stat": 11.9834412151
+     }
+    },
+    "alpha_positivo_janelas": 0.3747771836,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "btc": {
+    "r2": 0.351,
+    "alpha_ano_pct": 34.3,
+    "t_alpha": 2.07,
+    "residual_edge_ratio": 0.89,
+    "beta": {
+     "0": {
+      "estimate": 0.0009402552,
+      "hac_standard_error": 0.0004553274,
+      "name": "intercept",
+      "t_stat": 2.0650093324
+     },
+     "1": {
+      "estimate": 0.4919768926,
+      "hac_standard_error": 0.038415866,
+      "name": "btc_return",
+      "t_stat": 12.8066068329
+     }
+    },
+    "alpha_positivo_janelas": 0.4826203209,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.617,
+    "alpha_ano_pct": 17.4,
+    "t_alpha": 1.61,
+    "residual_edge_ratio": 0.59,
+    "beta": {
+     "0": {
+      "estimate": 0.000476807,
+      "hac_standard_error": 0.0002959458,
+      "name": "intercept",
+      "t_stat": 1.6111292116
+     },
+     "1": {
+      "estimate": 0.5941721555,
+      "hac_standard_error": 0.0687591448,
+      "name": "cesta_return",
+      "t_stat": 8.6413546488
+     },
+     "2": {
+      "estimate": -0.1249418379,
+      "hac_standard_error": 0.0581871329,
+      "name": "btc_return",
+      "t_stat": -2.1472416945
+     }
+    },
+    "alpha_positivo_janelas": 0.3368983957,
+    "status": "RESIDUAL_FRAGILE"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.1145491244,
+      "annualized_volatility": 0.3648732613,
+      "max_drawdown": -0.4635803514,
+      "periodic_mean": 0.0003138332,
+      "periodic_volatility": 0.0190983394,
+      "sharpe_zero_rate": 0.3139422274
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.5070993915
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.2167734986,
+      "annualized_volatility": 0.2407696625,
+      "max_drawdown": -0.3930664252,
+      "periodic_mean": 0.0005939,
+      "periodic_volatility": 0.0126024601,
+      "sharpe_zero_rate": 0.9003356002
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.5114822547
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REJECT",
+   "verdict": "Abandon",
+   "quality_score": 58,
+   "blocking_reasons": [
+    "excessive_drawdown"
+   ],
+   "profit_factor": 1.2808783794525282,
+   "red_flags": [
+    {
+     "id": "excessive_drawdown",
+     "severity": "high",
+     "message": "Max drawdown 56.79% meets or exceeds the 50% hard ceiling — catastrophic risk."
+    }
+   ]
+  }
+ },
+ "vaivem": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 652.7,
+  "pior_queda_pct": -66.5,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Residual evidence does not clear all robustness thresholds.",
+    "Rolling alpha is positive in too few windows."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.001,
+    "alpha_ano_pct": 45.6,
+    "t_alpha": 2.08,
+    "residual_edge_ratio": 0.77,
+    "beta": {
+     "0": {
+      "estimate": 0.0012479735,
+      "hac_standard_error": 0.0005999963,
+      "name": "intercept",
+      "t_stat": 2.0799688623
+     },
+     "1": {
+      "estimate": 0.0282484049,
+      "hac_standard_error": 0.0855600519,
+      "name": "cesta_return",
+      "t_stat": 0.3301588095
+     }
+    },
+    "alpha_positivo_janelas": 0.4393939394,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "btc": {
+    "r2": 0.003,
+    "alpha_ano_pct": 50.9,
+    "t_alpha": 2.23,
+    "residual_edge_ratio": 0.86,
+    "beta": {
+     "0": {
+      "estimate": 0.0013933996,
+      "hac_standard_error": 0.0006256196,
+      "name": "intercept",
+      "t_stat": 2.2272312383
+     },
+     "1": {
+      "estimate": -0.0539215779,
+      "hac_standard_error": 0.0711540211,
+      "name": "btc_return",
+      "t_stat": -0.7578149081
+     }
+    },
+    "alpha_positivo_janelas": 0.5204991087,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.021,
+    "alpha_ano_pct": 45.3,
+    "t_alpha": 2.1,
+    "residual_edge_ratio": 0.77,
+    "beta": {
+     "0": {
+      "estimate": 0.001241571,
+      "hac_standard_error": 0.0005912845,
+      "name": "intercept",
+      "t_stat": 2.0997861079
+     },
+     "1": {
+      "estimate": 0.1946545816,
+      "hac_standard_error": 0.1368540643,
+      "name": "cesta_return",
+      "t_stat": 1.4223514847
+     },
+     "2": {
+      "estimate": -0.2560280823,
+      "hac_standard_error": 0.1157266266,
+      "name": "btc_return",
+      "t_stat": -2.2123524203
+     }
+    },
+    "alpha_positivo_janelas": 0.4113190731,
+    "status": "RESIDUAL_FRAGILE"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.3385175181,
+      "annualized_volatility": 0.7285961011,
+      "max_drawdown": -0.7209824128,
+      "periodic_mean": 0.0009274453,
+      "periodic_volatility": 0.0381364629,
+      "sharpe_zero_rate": 0.4646161537
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.514198783
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.5357851632,
+      "annualized_volatility": 0.4808653109,
+      "max_drawdown": -0.6124941321,
+      "periodic_mean": 0.0014679046,
+      "periodic_volatility": 0.0251696407,
+      "sharpe_zero_rate": 1.1142104683
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.5233124565
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REJECT",
+   "verdict": "Abandon",
+   "quality_score": 58,
+   "blocking_reasons": [
+    "excessive_drawdown"
+   ],
+   "profit_factor": 1.1394105666803094,
+   "red_flags": [
+    {
+     "id": "excessive_drawdown",
+     "severity": "high",
+     "message": "Max drawdown 66.51% meets or exceeds the 50% hard ceiling — catastrophic risk."
+    }
+   ]
+  }
+ },
+ "extremo": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 73.5,
+  "pior_queda_pct": -40.7,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Residual evidence does not clear all robustness thresholds.",
+    "Rolling alpha is positive in too few windows."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.001,
+    "alpha_ano_pct": 14.5,
+    "t_alpha": 1.31,
+    "residual_edge_ratio": 0.45,
+    "beta": {
+     "0": {
+      "estimate": 0.0003968134,
+      "hac_standard_error": 0.0003038309,
+      "name": "intercept",
+      "t_stat": 1.306033919
+     },
+     "1": {
+      "estimate": -0.0109630219,
+      "hac_standard_error": 0.0186958852,
+      "name": "cesta_return",
+      "t_stat": -0.5863868861
+     }
+    },
+    "alpha_positivo_janelas": 0.5254010695,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "btc": {
+    "r2": 0.0,
+    "alpha_ano_pct": 13.8,
+    "t_alpha": 1.22,
+    "residual_edge_ratio": 0.42,
+    "beta": {
+     "0": {
+      "estimate": 0.0003768515,
+      "hac_standard_error": 0.0003095114,
+      "name": "intercept",
+      "t_stat": 1.2175691677
+     },
+     "1": {
+      "estimate": -0.0036839311,
+      "hac_standard_error": 0.0203092259,
+      "name": "btc_return",
+      "t_stat": -0.1813920015
+     }
+    },
+    "alpha_positivo_janelas": 0.5209447415,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.001,
+    "alpha_ano_pct": 14.5,
+    "t_alpha": 1.31,
+    "residual_edge_ratio": 0.45,
+    "beta": {
+     "0": {
+      "estimate": 0.0003974055,
+      "hac_standard_error": 0.0003036934,
+      "name": "intercept",
+      "t_stat": 1.3085745154
+     },
+     "1": {
+      "estimate": -0.0263516564,
+      "hac_standard_error": 0.038210564,
+      "name": "cesta_return",
+      "t_stat": -0.6896432208
+     },
+     "2": {
+      "estimate": 0.0236765405,
+      "hac_standard_error": 0.0434099163,
+      "name": "btc_return",
+      "t_stat": 0.5454177875
+     }
+    },
+    "alpha_positivo_janelas": 0.4928698752,
+    "status": "RESIDUAL_FRAGILE"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.24560507,
+      "annualized_volatility": 0.4114366046,
+      "max_drawdown": -0.3700991609,
+      "periodic_mean": 0.0006728906,
+      "periodic_volatility": 0.0215355761,
+      "sharpe_zero_rate": 0.596945112
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.4939148073
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.0756946473,
+      "annualized_volatility": 0.2496627005,
+      "max_drawdown": -0.3314525651,
+      "periodic_mean": 0.0002073826,
+      "periodic_volatility": 0.013067943,
+      "sharpe_zero_rate": 0.3031876492
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.4975643702
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REFINE",
+   "verdict": "Refine",
+   "quality_score": 60,
+   "blocking_reasons": [],
+   "profit_factor": 1.0752613351394849,
+   "red_flags": []
+  }
+ },
+ "bitao": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 910.9,
+  "pior_queda_pct": -62.3,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Alpha, residual edge ratio, and rolling stability clear the configured thresholds.",
+    "Diagnostic status changes under alternate declared baselines."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.002,
+    "alpha_ano_pct": 54.3,
+    "t_alpha": 2.41,
+    "residual_edge_ratio": 0.95,
+    "beta": {
+     "0": {
+      "estimate": 0.0014868908,
+      "hac_standard_error": 0.0006161388,
+      "name": "intercept",
+      "t_stat": 2.4132398547
+     },
+     "1": {
+      "estimate": -0.0358355149,
+      "hac_standard_error": 0.0569939217,
+      "name": "cesta_return",
+      "t_stat": -0.6287602934
+     }
+    },
+    "alpha_positivo_janelas": 0.6671122995,
+    "status": "RESIDUAL_EDGE"
+   },
+   "btc": {
+    "r2": 0.001,
+    "alpha_ano_pct": 50.0,
+    "t_alpha": 2.3,
+    "residual_edge_ratio": 0.87,
+    "beta": {
+     "0": {
+      "estimate": 0.0013702511,
+      "hac_standard_error": 0.0005961155,
+      "name": "intercept",
+      "t_stat": 2.2986333202
+     },
+     "1": {
+      "estimate": 0.0226295295,
+      "hac_standard_error": 0.0807951792,
+      "name": "btc_return",
+      "t_stat": 0.2800851454
+     }
+    },
+    "alpha_positivo_janelas": 0.5454545455,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.013,
+    "alpha_ano_pct": 54.4,
+    "t_alpha": 2.44,
+    "residual_edge_ratio": 0.96,
+    "beta": {
+     "0": {
+      "estimate": 0.0014914926,
+      "hac_standard_error": 0.0006118169,
+      "name": "intercept",
+      "t_stat": 2.4378089156
+     },
+     "1": {
+      "estimate": -0.155439908,
+      "hac_standard_error": 0.0719981229,
+      "name": "cesta_return",
+      "t_stat": -2.1589438966
+     },
+     "2": {
+      "estimate": 0.1840201128,
+      "hac_standard_error": 0.1036487646,
+      "name": "btc_return",
+      "t_stat": 1.7754202232
+     }
+    },
+    "alpha_positivo_janelas": 0.5423351159,
+    "status": "RESIDUAL_FRAGILE"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.4400844743,
+      "annualized_volatility": 0.6399580902,
+      "max_drawdown": -0.4950201921,
+      "periodic_mean": 0.0012057109,
+      "periodic_volatility": 0.0334969374,
+      "sharpe_zero_rate": 0.6876770229
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.5172413793
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.6131353359,
+      "annualized_volatility": 0.5212712543,
+      "max_drawdown": -0.7114763774,
+      "periodic_mean": 0.0016798228,
+      "periodic_volatility": 0.0272845845,
+      "sharpe_zero_rate": 1.1762308603
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.5135699374
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REJECT",
+   "verdict": "Abandon",
+   "quality_score": 58,
+   "blocking_reasons": [
+    "excessive_drawdown"
+   ],
+   "profit_factor": 1.1465656300769376,
+   "red_flags": [
+    {
+     "id": "excessive_drawdown",
+     "severity": "high",
+     "message": "Max drawdown 62.32% meets or exceeds the 50% hard ceiling — catastrophic risk."
+    }
+   ]
+  }
+ },
+ "semanal": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 2966.9,
+  "pior_queda_pct": -52.1,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Residual evidence does not clear all robustness thresholds.",
+    "Rolling alpha is positive in too few windows."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.62,
+    "alpha_ano_pct": 17.8,
+    "t_alpha": 1.54,
+    "residual_edge_ratio": 0.57,
+    "beta": {
+     "0": {
+      "estimate": 0.0004870383,
+      "hac_standard_error": 0.0003153036,
+      "name": "intercept",
+      "t_stat": 1.5446642611
+     },
+     "1": {
+      "estimate": 0.5481391472,
+      "hac_standard_error": 0.0413716515,
+      "name": "cesta_return",
+      "t_stat": 13.2491483309
+     }
+    },
+    "alpha_positivo_janelas": 0.4389483066,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "btc": {
+    "r2": 0.35,
+    "alpha_ano_pct": 36.0,
+    "t_alpha": 2.09,
+    "residual_edge_ratio": 0.89,
+    "beta": {
+     "0": {
+      "estimate": 0.0009867734,
+      "hac_standard_error": 0.0004710874,
+      "name": "intercept",
+      "t_stat": 2.0946717221
+     },
+     "1": {
+      "estimate": 0.5204163499,
+      "hac_standard_error": 0.0438366498,
+      "name": "btc_return",
+      "t_stat": 11.8717181324
+     }
+    },
+    "alpha_positivo_janelas": 0.5503565062,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.629,
+    "alpha_ano_pct": 17.6,
+    "t_alpha": 1.56,
+    "residual_edge_ratio": 0.57,
+    "beta": {
+     "0": {
+      "estimate": 0.0004832924,
+      "hac_standard_error": 0.000309296,
+      "name": "intercept",
+      "t_stat": 1.5625562082
+     },
+     "1": {
+      "estimate": 0.6454968034,
+      "hac_standard_error": 0.0608499451,
+      "name": "cesta_return",
+      "t_stat": 10.6080096263
+     },
+     "2": {
+      "estimate": -0.1497918799,
+      "hac_standard_error": 0.0516561544,
+      "name": "btc_return",
+      "t_stat": -2.8997876759
+     }
+    },
+    "alpha_positivo_janelas": 0.4135472371,
+    "status": "RESIDUAL_FRAGILE"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.2313002833,
+      "annualized_volatility": 0.3931481197,
+      "max_drawdown": -0.3722825886,
+      "periodic_mean": 0.0006336994,
+      "periodic_volatility": 0.0205783131,
+      "sharpe_zero_rate": 0.5883286011
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.4969574037
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.1410383633,
+      "annualized_volatility": 0.2388837761,
+      "max_drawdown": -0.4013504477,
+      "periodic_mean": 0.0003864065,
+      "periodic_volatility": 0.0125037483,
+      "sharpe_zero_rate": 0.5904057849
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.5100904662
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REJECT",
+   "verdict": "Abandon",
+   "quality_score": 59,
+   "blocking_reasons": [
+    "excessive_drawdown"
+   ],
+   "profit_factor": 1.2886462373824488,
+   "red_flags": [
+    {
+     "id": "excessive_drawdown",
+     "severity": "high",
+     "message": "Max drawdown 52.09% meets or exceeds the 50% hard ceiling — catastrophic risk."
+    }
+   ]
+  }
+ },
+ "calmo": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 445.0,
+  "pior_queda_pct": -53.2,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Declared baselines explain most variation and residual edge is weak.",
+    "Diagnostic status changes under alternate declared baselines."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.841,
+    "alpha_ano_pct": -6.6,
+    "t_alpha": -1.08,
+    "residual_edge_ratio": -0.46,
+    "beta": {
+     "0": {
+      "estimate": -0.0001814611,
+      "hac_standard_error": 0.0001685236,
+      "name": "intercept",
+      "t_stat": -1.0767692498
+     },
+     "1": {
+      "estimate": 0.4572349744,
+      "hac_standard_error": 0.0232195909,
+      "name": "cesta_return",
+      "t_stat": 19.6917756649
+     }
+    },
+    "alpha_positivo_janelas": 0.4135472371,
+    "status": "BASELINE_EXPLAINED"
+   },
+   "btc": {
+    "r2": 0.622,
+    "alpha_ano_pct": 5.2,
+    "t_alpha": 0.55,
+    "residual_edge_ratio": 0.23,
+    "beta": {
+     "0": {
+      "estimate": 0.0001419644,
+      "hac_standard_error": 0.0002594474,
+      "name": "intercept",
+      "t_stat": 0.547180041
+     },
+     "1": {
+      "estimate": 0.4971477165,
+      "hac_standard_error": 0.0194857976,
+      "name": "btc_return",
+      "t_stat": 25.513336766
+     }
+    },
+    "alpha_positivo_janelas": 0.575311943,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.844,
+    "alpha_ano_pct": -6.6,
+    "t_alpha": -1.08,
+    "residual_edge_ratio": -0.46,
+    "beta": {
+     "0": {
+      "estimate": -0.0001797377,
+      "hac_standard_error": 0.0001668525,
+      "name": "intercept",
+      "t_stat": -1.0772249453
+     },
+     "1": {
+      "estimate": 0.4124439759,
+      "hac_standard_error": 0.0361184141,
+      "name": "cesta_return",
+      "t_stat": 11.4192161088
+     },
+     "2": {
+      "estimate": 0.0689142294,
+      "hac_standard_error": 0.0286528569,
+      "name": "btc_return",
+      "t_stat": 2.4051433947
+     }
+    },
+    "alpha_positivo_janelas": 0.4126559715,
+    "status": "BASELINE_EXPLAINED"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": -0.2126445326,
+      "annualized_volatility": 0.1518635062,
+      "max_drawdown": -0.5035363597,
+      "periodic_mean": -0.0005825878,
+      "periodic_volatility": 0.0079488992,
+      "sharpe_zero_rate": -1.4002345793
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.4310344828
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.0342270445,
+      "annualized_volatility": 0.1385707639,
+      "max_drawdown": -0.2803926222,
+      "periodic_mean": 9.37727e-05,
+      "periodic_volatility": 0.0072531253,
+      "sharpe_zero_rate": 0.2470004753
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.490605428
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REJECT",
+   "verdict": "Abandon",
+   "quality_score": 57,
+   "blocking_reasons": [
+    "excessive_drawdown"
+   ],
+   "profit_factor": 1.1384581267847873,
+   "red_flags": [
+    {
+     "id": "excessive_drawdown",
+     "severity": "high",
+     "message": "Max drawdown 53.23% meets or exceeds the 50% hard ceiling — catastrophic risk."
+    }
+   ]
+  }
+ },
+ "gestor": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 1085.9,
+  "pior_queda_pct": -40.3,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Residual evidence does not clear all robustness thresholds.",
+    "Rolling alpha is positive in too few windows."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.681,
+    "alpha_ano_pct": 10.8,
+    "t_alpha": 1.61,
+    "residual_edge_ratio": 0.58,
+    "beta": {
+     "0": {
+      "estimate": 0.0002955805,
+      "hac_standard_error": 0.0001838774,
+      "name": "intercept",
+      "t_stat": 1.6074871878
+     },
+     "1": {
+      "estimate": 0.3768442385,
+      "hac_standard_error": 0.0214266868,
+      "name": "cesta_return",
+      "t_stat": 17.5876113058
+     }
+    },
+    "alpha_positivo_janelas": 0.4808377897,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "btc": {
+    "r2": 0.425,
+    "alpha_ano_pct": 22.3,
+    "t_alpha": 2.12,
+    "residual_edge_ratio": 0.89,
+    "beta": {
+     "0": {
+      "estimate": 0.0006114611,
+      "hac_standard_error": 0.0002883356,
+      "name": "intercept",
+      "t_stat": 2.1206576818
+     },
+     "1": {
+      "estimate": 0.376464257,
+      "hac_standard_error": 0.0232392882,
+      "name": "btc_return",
+      "t_stat": 16.1994745285
+     }
+    },
+    "alpha_positivo_janelas": 0.5227272727,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.683,
+    "alpha_ano_pct": 10.7,
+    "t_alpha": 1.61,
+    "residual_edge_ratio": 0.58,
+    "beta": {
+     "0": {
+      "estimate": 0.0002944418,
+      "hac_standard_error": 0.0001828992,
+      "name": "intercept",
+      "t_stat": 1.6098583143
+     },
+     "1": {
+      "estimate": 0.4064403196,
+      "hac_standard_error": 0.0317363499,
+      "name": "cesta_return",
+      "t_stat": 12.8067758537
+     },
+     "2": {
+      "estimate": -0.045535737,
+      "hac_standard_error": 0.0269184728,
+      "name": "btc_return",
+      "t_stat": -1.6916166537
+     }
+    },
+    "alpha_positivo_janelas": 0.4567736185,
+    "status": "RESIDUAL_FRAGILE"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.0947024863,
+      "annualized_volatility": 0.2323337554,
+      "max_drawdown": -0.2183487456,
+      "periodic_mean": 0.0002594589,
+      "periodic_volatility": 0.0121609046,
+      "sharpe_zero_rate": 0.407613978
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.4817444219
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.1169333884,
+      "annualized_volatility": 0.147965768,
+      "max_drawdown": -0.2425046069,
+      "periodic_mean": 0.0003203654,
+      "periodic_volatility": 0.0077448823,
+      "sharpe_zero_rate": 0.7902732503
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.5100904662
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REFINE",
+   "verdict": "Refine",
+   "quality_score": 61,
+   "blocking_reasons": [],
+   "profit_factor": 1.248846534577554,
+   "red_flags": []
+  }
+ },
+ "carteira": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 1258.9,
+  "pior_queda_pct": -39.9,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Residual evidence does not clear all robustness thresholds.",
+    "Rolling alpha is positive in too few windows."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.286,
+    "alpha_ano_pct": 23.8,
+    "t_alpha": 2.28,
+    "residual_edge_ratio": 0.83,
+    "beta": {
+     "0": {
+      "estimate": 0.0006528644,
+      "hac_standard_error": 0.0002867308,
+      "name": "intercept",
+      "t_stat": 2.2769248751
+     },
+     "1": {
+      "estimate": 0.249964974,
+      "hac_standard_error": 0.0358135484,
+      "name": "cesta_return",
+      "t_stat": 6.9796204326
+     }
+    },
+    "alpha_positivo_janelas": 0.5147058824,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "btc": {
+    "r2": 0.173,
+    "alpha_ano_pct": 31.7,
+    "t_alpha": 2.6,
+    "residual_edge_ratio": 1.03,
+    "beta": {
+     "0": {
+      "estimate": 0.0008682492,
+      "hac_standard_error": 0.0003341065,
+      "name": "intercept",
+      "t_stat": 2.598719621
+     },
+     "1": {
+      "estimate": 0.2457608299,
+      "hac_standard_error": 0.0357249895,
+      "name": "btc_return",
+      "t_stat": 6.8792414947
+     }
+    },
+    "alpha_positivo_janelas": 0.5294117647,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.288,
+    "alpha_ano_pct": 23.8,
+    "t_alpha": 2.28,
+    "residual_edge_ratio": 0.83,
+    "beta": {
+     "0": {
+      "estimate": 0.0006518051,
+      "hac_standard_error": 0.000286387,
+      "name": "intercept",
+      "t_stat": 2.2759592933
+     },
+     "1": {
+      "estimate": 0.277495992,
+      "hac_standard_error": 0.0523079299,
+      "name": "cesta_return",
+      "t_stat": 5.3050463389
+     },
+     "2": {
+      "estimate": -0.0423584862,
+      "hac_standard_error": 0.0488147429,
+      "name": "btc_return",
+      "t_stat": -0.8677396156
+     }
+    },
+    "alpha_positivo_janelas": 0.444741533,
+    "status": "RESIDUAL_FRAGILE"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.1929019896,
+      "annualized_volatility": 0.3430685716,
+      "max_drawdown": -0.3309384099,
+      "periodic_mean": 0.0005284986,
+      "periodic_volatility": 0.0179570297,
+      "sharpe_zero_rate": 0.5622840608
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.5050709939
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": 0.2694423421,
+      "annualized_volatility": 0.2393366926,
+      "max_drawdown": -0.3737098293,
+      "periodic_mean": 0.0007381982,
+      "periodic_volatility": 0.012527455,
+      "sharpe_zero_rate": 1.1257878565
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.5344467641
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REFINE",
+   "verdict": "Refine",
+   "quality_score": 63,
+   "blocking_reasons": [],
+   "profit_factor": 1.2519243630656942,
+   "red_flags": []
+  }
+ },
+ "segurador": {
+  "dias": 2423,
+  "inicio": "2020-03-21",
+  "fim": "2026-11-07",
+  "total_pct": 1861.1,
+  "pior_queda_pct": -84.4,
+  "residuo": {
+   "decision_eligibility": "REVIEW_REQUIRED",
+   "decision_grade": false,
+   "reasons": [
+    "Declared baselines explain most variation and residual edge is weak.",
+    "Diagnostic status changes under alternate declared baselines."
+   ],
+   "status": "RESIDUAL_FRAGILE",
+   "thresholds": {
+    "alpha_t_stat_min": 2.0,
+    "baseline_explained_r2_min": 0.75,
+    "residual_edge_ratio_min": 0.75,
+    "rolling_positive_fraction_min": 0.6,
+    "weak_edge_ratio_max": 0.5
+   },
+   "trade_authorization": "NOT_AUTHORIZED"
+  },
+  "modelos": {
+   "cesta": {
+    "r2": 0.887,
+    "alpha_ano_pct": -10.8,
+    "t_alpha": -1.2,
+    "residual_edge_ratio": -0.41,
+    "beta": {
+     "0": {
+      "estimate": -0.0002951201,
+      "hac_standard_error": 0.0002467699,
+      "name": "intercept",
+      "t_stat": -1.1959322553
+     },
+     "1": {
+      "estimate": 1.0228296014,
+      "hac_standard_error": 0.0190522699,
+      "name": "cesta_return",
+      "t_stat": 53.6854457914
+     }
+    },
+    "alpha_positivo_janelas": 0.2901069519,
+    "status": "BASELINE_EXPLAINED"
+   },
+   "btc": {
+    "r2": 0.592,
+    "alpha_ano_pct": 18.7,
+    "t_alpha": 0.87,
+    "residual_edge_ratio": 0.37,
+    "beta": {
+     "0": {
+      "estimate": 0.0005111431,
+      "hac_standard_error": 0.000584176,
+      "name": "intercept",
+      "t_stat": 0.8749813569
+     },
+     "1": {
+      "estimate": 1.0562741313,
+      "hac_standard_error": 0.0407045834,
+      "name": "btc_return",
+      "t_stat": 25.9497590359
+     }
+    },
+    "alpha_positivo_janelas": 0.4688057041,
+    "status": "RESIDUAL_FRAGILE"
+   },
+   "cesta_mais_btc": {
+    "r2": 0.887,
+    "alpha_ano_pct": -10.8,
+    "t_alpha": -1.21,
+    "residual_edge_ratio": -0.41,
+    "beta": {
+     "0": {
+      "estimate": -0.0002955594,
+      "hac_standard_error": 0.0002452664,
+      "name": "intercept",
+      "t_stat": -1.2050546996
+     },
+     "1": {
+      "estimate": 1.034247477,
+      "hac_standard_error": 0.0510581341,
+      "name": "cesta_return",
+      "t_stat": 20.2562724713
+     },
+     "2": {
+      "estimate": -0.0175672373,
+      "hac_standard_error": 0.0547139566,
+      "name": "btc_return",
+      "t_stat": -0.3210741527
+     }
+    },
+    "alpha_positivo_janelas": 0.2535650624,
+    "status": "BASELINE_EXPLAINED"
+   }
+  },
+  "regimes": {
+   "volatility_regime": [
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": -0.120129049,
+      "annualized_volatility": 0.3632343413,
+      "max_drawdown": -0.4459400977,
+      "periodic_mean": -0.0003291207,
+      "periodic_volatility": 0.0190125544,
+      "sharpe_zero_rate": -0.3307205165
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "alta_vol",
+     "observation_count": 986,
+     "positive_fraction": 0.4320486815
+    },
+    {
+     "active_return_metrics": {
+      "annualized_arithmetic_return": -0.0992035566,
+      "annualized_volatility": 0.1671311394,
+      "max_drawdown": -0.5440357312,
+      "periodic_mean": -0.0002717906,
+      "periodic_volatility": 0.0087480437,
+      "sharpe_zero_rate": -0.593567165
+     },
+     "evidence_status": "ADEQUATE",
+     "label": "baixa_vol",
+     "observation_count": 1437,
+     "positive_fraction": 0.450243563
+    }
+   ]
+  },
+  "robustez": {
+   "decision": "REJECT",
+   "verdict": "Abandon",
+   "quality_score": 59,
+   "blocking_reasons": [
+    "excessive_drawdown"
+   ],
+   "profit_factor": 1.1591938447380374,
+   "red_flags": [
+    {
+     "id": "excessive_drawdown",
+     "severity": "high",
+     "message": "Max drawdown 84.39% meets or exceeds the 50% hard ceiling — catastrophic risk."
+    }
+   ]
+  }
+ }
+}

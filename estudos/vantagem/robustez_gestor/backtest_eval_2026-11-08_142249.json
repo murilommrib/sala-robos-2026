@@ -1,0 +1,49 @@
+{
+  "total_score": 61,
+  "quality_score": 61,
+  "decision": "REFINE",
+  "blocking_reasons": [],
+  "verdict": "Refine",
+  "dimensions": [
+    {
+      "name": "Sample Size",
+      "score": 20,
+      "max_score": 20
+    },
+    {
+      "name": "Expectancy",
+      "score": 6,
+      "max_score": 20
+    },
+    {
+      "name": "Risk Management",
+      "score": 3,
+      "max_score": 20
+    },
+    {
+      "name": "Robustness",
+      "score": 12,
+      "max_score": 20
+    },
+    {
+      "name": "Execution Realism",
+      "score": 20,
+      "max_score": 20
+    }
+  ],
+  "red_flags": [],
+  "profit_factor": 1.248846534577554,
+  "profit_factor_status": "FINITE",
+  "expectancy": 0.1168438,
+  "inputs": {
+    "total_trades": 2423,
+    "win_rate": 53.4,
+    "avg_win_pct": 1.0981,
+    "avg_loss_pct": 1.0076,
+    "max_drawdown_pct": 40.3,
+    "years_tested": 6,
+    "num_parameters": 2,
+    "slippage_tested": true,
+    "max_acceptable_drawdown_pct": 50
+  }
+}
