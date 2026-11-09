@@ -23,20 +23,33 @@ def _arq(t): return os.path.join(PASTA, "vivo_%s.json" % t.replace("^", "").repl
 def baixar(t, max_idade=3600):
     """Preços diários ajustados dos últimos 2 anos; cache de 1 hora. Em erro, usa o cache."""
     fp = _arq(t)
-    if os.path.exists(fp) and time.time() - os.path.getmtime(fp) < max_idade:
-        return dict(json.load(open(fp)))
+    cache = None
+    try:
+        cache = json.load(open(fp))
+    except Exception:
+        pass
+    # a hora do download fica DENTRO do arquivo (no GitHub a data do arquivo é sempre a do checkout)
+    rows_cache = cache.get("rows") if isinstance(cache, dict) else cache
+    baixado = cache.get("baixado", 0) if isinstance(cache, dict) else 0
+    if rows_cache and time.time() - baixado < max_idade:
+        return dict(rows_cache)
     try:
         url = "https://query1.finance.yahoo.com/v8/finance/chart/%s?range=2y&interval=1d" % urllib.request.quote(t)
         d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20))["chart"]["result"][0]
         adj = (d["indicators"].get("adjclose") or [{}])[0].get("adjclose") or d["indicators"]["quote"][0]["close"]
         rows = [(dt.datetime.utcfromtimestamp(a).strftime("%Y-%m-%d"), b) for a, b in zip(d["timestamp"], adj) if b]
         os.makedirs(PASTA, exist_ok=True)
-        tmp = fp + ".tmp"; json.dump(rows, open(tmp, "w")); os.replace(tmp, fp)
+        tmp = fp + ".tmp"; json.dump({"baixado": time.time(), "rows": rows}, open(tmp, "w")); os.replace(tmp, fp)
         return dict(rows)
     except Exception:
-        if os.path.exists(fp):
-            return dict(json.load(open(fp)))
+        if rows_cache:
+            return dict(rows_cache)
         raise
+
+def ler(t):
+    """Preços guardados de um ticker (sem baixar)."""
+    c = json.load(open(_arq(t)))
+    return dict(c.get("rows") if isinstance(c, dict) else c)
 
 def _ate(serie, dia):
     ks = [k for k in serie if k <= dia]

@@ -121,8 +121,8 @@ def _etf(rid, cap, of):
     try:
         import diversificado as DV
         w = of.get("carteira") or {}
-        fx = dict(json.load(open(DV._arq(DV.TICK["fx"]))))
-        S = {a: dict(json.load(open(DV._arq(DV.TICK[a])))) for a in w}
+        fx = DV.ler(DV.TICK["fx"])
+        S = {a: DV.ler(DV.TICK[a]) for a in w}
         dias = sorted(set.intersection(*[set(s) for s in S.values()]) & set(fx))[-61:]
         R = {a: {dias[i]: (S[a][dias[i]] / fx[dias[i]]) / (S[a][dias[i - 1]] / fx[dias[i - 1]]) - 1 for i in range(1, len(dias))} for a in w}
         v, pior = var_pesos(w, R)

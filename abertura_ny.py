@@ -24,9 +24,11 @@ def _arq(c): return os.path.join(PASTA, "vivo_5m_%s.json" % c)
 def velas(c, agora, max_idade=240):
     """Velas de 5 min guardadas (acumula, porque o Yahoo só devolve alguns dias de cada vez)."""
     fp = _arq(c)
-    try: rows = {int(k): v for k, v in json.load(open(fp)).items()}
-    except Exception: rows = {}
-    if not os.path.exists(fp) or time.time() - os.path.getmtime(fp) > max_idade:
+    try: bruto = json.load(open(fp))
+    except Exception: bruto = {}
+    baixado = bruto.pop("_baixado", 0)                 # hora do último download (dentro do arquivo)
+    rows = {int(k): v for k, v in bruto.items()}
+    if time.time() - baixado > max_idade:
         try:
             url = "https://query1.finance.yahoo.com/v8/finance/chart/%s?range=5d&interval=5m" % urllib.request.quote(MERC[c])
             d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20))["chart"]["result"][0]
@@ -37,7 +39,8 @@ def velas(c, agora, max_idade=240):
             corte = agora - 40 * 86400
             rows = {t: v for t, v in rows.items() if t >= corte}
             os.makedirs(PASTA, exist_ok=True)
-            tmp = fp + ".tmp"; json.dump({str(t): v for t, v in sorted(rows.items())}, open(tmp, "w")); os.replace(tmp, fp)
+            dados = {str(t): v for t, v in sorted(rows.items())}; dados["_baixado"] = time.time()
+            tmp = fp + ".tmp"; json.dump(dados, open(tmp, "w")); os.replace(tmp, fp)
         except Exception:
             pass
     return [(t, *rows[t]) for t in sorted(rows)]
