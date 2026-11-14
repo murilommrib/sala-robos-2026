@@ -81,3 +81,6 @@
 2026-11-14 16:01:08 Candela ETH vela 2026-11-14T15:00Z: ordem limitada de VENDA a 1852.07
 2026-11-14 17:01:08 Candela ETH vela 2026-11-14T16:00Z: ordem limitada de VENDA a 1837.04
 2026-11-14 18:01:07 Candela ETH vela 2026-11-14T17:00Z: executou venda a 1852.07
+2026-11-14 21:01:06 Candela ETH vela 2026-11-14T20:00Z: saiu por alvo a 1819.56
+2026-11-14 21:01:24 Mesa: configuração de VENDA em BTC a 6.477e+04 (stop 6.554e+04, alvo 6.362e+04)
+2026-11-14 21:01:24 Mesa: configuração de VENDA em ETH a 1784 (stop 1816, alvo 1735)
