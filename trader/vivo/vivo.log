@@ -126,3 +126,5 @@
 2026-11-20 20:01:08 Candela ETH vela 2026-11-20T19:00Z: ordem limitada de VENDA a 1622.27
 2026-11-20 21:01:09 Candela ETH vela 2026-11-20T20:00Z: ordem expirou sem executar
 2026-11-20 21:01:09 Candela ETH vela 2026-11-20T20:00Z: ordem limitada de VENDA a 1616.77
+2026-11-20 22:01:06 Candela ETH vela 2026-11-20T21:00Z: ordem expirou sem executar
+2026-11-20 22:01:06 Candela ETH vela 2026-11-20T21:00Z: executou venda a 1630.63
