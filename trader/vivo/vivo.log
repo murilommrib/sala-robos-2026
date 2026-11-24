@@ -149,3 +149,4 @@
 2026-11-24 03:01:09 Candela ETH vela 2026-11-24T02:00Z: ordem expirou sem executar
 2026-11-24 04:01:12 Candela ETH vela 2026-11-24T03:00Z: ordem expirou sem executar
 2026-11-24 09:01:09 Candela ETH vela 2026-11-24T08:00Z: ordem limitada de VENDA a 1702.24
+2026-11-24 09:15:51 Mesa: configuração de VENDA em BTC a 5.988e+04 (stop 6.045e+04, alvo 5.902e+04)
